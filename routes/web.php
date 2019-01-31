@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::any('api/user', function(){
+   return dd(phpinfo());
+});
